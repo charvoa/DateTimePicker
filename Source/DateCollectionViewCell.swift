@@ -29,7 +29,7 @@ class DateCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(dayLabel)
         contentView.addSubview(numberLabel)
         contentView.backgroundColor = .white
-        contentView.layer.cornerRadius = 3
+        contentView.layer.cornerRadius = 10.0
         contentView.layer.masksToBounds = true
         contentView.layer.borderWidth = 1
     }
