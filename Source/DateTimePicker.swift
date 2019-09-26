@@ -605,8 +605,9 @@ public protocol DateTimePickerDelegate: class {
         guard dateTitleLabel != nil else {
             return
         }
-    
-        dateTitleLabel.text = selectedDateString
+
+        let fromString = NSLocalizedString("lesson.details.coach.from", comment: "")
+        dateTitleLabel.text = fromString + selectedDateString
     }
     
     func fillDates(fromDate: Date, toDate: Date) {
