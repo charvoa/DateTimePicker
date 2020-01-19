@@ -93,7 +93,7 @@ public protocol DateTimePickerDelegate: class {
     public var selectedDateString: String {
         get {
             let formatter = DateFormatter()
-            formatter.dateFormat = self.dateFormat
+            formatter.dateFormat = "dd/MM/YYYY - HH:mm"
             return formatter.string(from: self.selectedDate)
         }
     }
@@ -607,6 +607,7 @@ public protocol DateTimePickerDelegate: class {
         }
 
         let fromString = NSLocalizedString("lesson.details.coach.from", comment: "")
+
         dateTitleLabel.text = fromString + selectedDateString
     }
     
